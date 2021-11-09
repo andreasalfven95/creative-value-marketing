@@ -1,9 +1,9 @@
-const Timeline = () => {
+const Timeline = ({ id, bgcolor }) => {
   return (
-    <div className='bg-gray-200'>
-      <div className='relative contain flex flex-col'>
+    <section id={id} className={`${bgcolor}`}>
+      <div className='relative contain flex flex-col py-20'>
         <div className='absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-[60px] md:mx-auto md:right-0 md:left-0'></div>
-        <div className='relative z-10 py-6'>
+        <div className='relative z-10'>
           <img
             src='https://images.pexels.com/photos/841286/pexels-photo-841286.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100'
             alt=''
@@ -73,7 +73,7 @@ const Timeline = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -9,6 +9,7 @@ module.exports = {
       },
     },
   },
+  /* MAIN COLORS, SECONDARY COLORS, HEADER LARGE/SMALL HEIGHT, HEADER PADDING */
   variants: {
     extend: {},
   },

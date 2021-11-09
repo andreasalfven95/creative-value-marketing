@@ -1,11 +1,16 @@
+import Footer from './Footer'
 import Header from './Header'
-import Hero from './Hero'
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
-      <main>{children}</main>
+      <header>
+        <Header />
+      </header>
+      <main className='cursor-default'>{children}</main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
