@@ -5,7 +5,7 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
-    { name: 'Featured', href: '#featured' },
+    /* { name: 'Featured', href: '#featured' }, */
     { name: 'Services', href: '#services' },
     { name: 'Contact', href: '#contact' },
   ]
@@ -77,7 +77,7 @@ const Header = () => {
         <div
           className={`fixed bg-white md:bg-transparent left-1/3 md:left-0 right-0 min-h-screen mt-4 md:mt-0 transform ${navbarState} transition duration-500 md:translate-x-0 md:relative md:min-h-0 overflow-x-hidden`}
         >
-          <ul className='text-xl md:text-lg mt-12 md:mt-0 text-right md:text-left space-y-8 md:space-y-0 md:space-x-6 p-4 md:p-0 md:flex md:items-center'>
+          <ul className='text-xl md:text-lg mt-12 md:mt-0 text-right md:text-left space-y-10 md:space-y-0 md:space-x-10 p-4 md:p-0 md:flex md:items-center'>
             {menuItems.map((menuitem, i) => (
               <li
                 key={i}

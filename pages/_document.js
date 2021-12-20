@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <meta
             name='description'
             /* content='A website for all of those who are planning their big day. Here you can find venues, locations, services etc.' */
-            content='En hemsida som hjälper er att hitta vad ni behöver för er stora dag. Här hittar ni Festlokaler, Fotografer, Florister, Bröllopsplanerare och Brudsalonger till erat drömbröllop.'
+            content='Låt oss hjälpa er att synas bättre online! Vi hjälper er med digital marknadsföring, SEO, skapande av hemsidor och mycket, mycket mera.'
           ></meta>
           {/*  <meta
             name='viewport'
@@ -23,7 +23,7 @@ class MyDocument extends Document {
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
           <link
-            href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap'
             rel='stylesheet'
           />
           {/* <link rel='preconnect' href='https://fonts.googleapis.com' />

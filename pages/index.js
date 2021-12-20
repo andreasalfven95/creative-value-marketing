@@ -16,15 +16,15 @@ export default function Home() {
 
       <Hero />
 
-      <Timeline id='about' bgcolor='bg-gray-200' />
+      {/* <Timeline id='about' bgcolor='bg-gray-200' /> */}
 
-      <Featured id='featured' bgcolor='bg-white' />
+      <Featured id='about' bgcolor='bg-white' />
 
       <Services id='services' bgcolor='bg-gray-200' />
 
-      <Finisher id='finisher' bgcolor='bg-gray-900' />
+      <Finisher id='contact' bgcolor='bg-gray-900' />
 
-      <Team id='contact' bgcolor='bg-white' />
+      {/* <Team id='contact' bgcolor='bg-white' /> */}
     </>
   )
 }
