@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Creative Value - Digital Marketing Agency</title>
-        <link rel='icon' href='/icons/favicon.svg' />
+        <link rel='icon' href='/assets/icons/favicon.svg' />
       </Head>
 
       <Hero />
