@@ -17,7 +17,7 @@ class MyDocument extends Document {
           <meta charSet='UTF-8'></meta>
 
           {/* FAVOICON */}
-          <link rel='shortcut icon' href='/favicon.ico' />
+          <link rel='shortcut icon' href='/icons/favicon.svg' />
 
           {/* FONTS */}
           <link rel='preconnect' href='https://fonts.googleapis.com' />

@@ -11,20 +11,22 @@ const Header = () => {
   ]
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [navbarState, setNavbarState] = useState('translate-x-full')
-  const [scrolledNav, setScrolledNav] = useState('h-16 md:h-28')
+  const [scrolledNav, setScrolledNav] = useState(
+    'h-16 md:h-28 bg-white md:bg-transparent'
+  )
   const [scrolledTxt, setScrolledTxt] = useState('')
-  const [scrolledImg, setScrolledImg] = useState('md:h-12')
+  const [scrolledImg, setScrolledImg] = useState('md:h-24')
 
   /* HANDLE SCROLL */
   const handleScroll = () => {
     if (window.scrollY > 30) {
       setScrolledNav('h-16 md:h-16 bg-white')
       setScrolledTxt('md:text-black')
-      setScrolledImg('md:h-8 md:invert')
+      setScrolledImg('md:h-16 md:invert-0')
     } else {
       setScrolledNav('h-16 md:h-28 bg-white md:bg-transparent')
       setScrolledTxt('md:text-white')
-      setScrolledImg('md:h-12')
+      setScrolledImg('md:h-24')
     }
   }
   useEffect(() => {
@@ -43,23 +45,23 @@ const Header = () => {
 
   return (
     <header
-      className={` ${scrolledNav} fixed contain z-50 top-0 w-full flex justify-between items-center transition-all duration-200 drop-shadow-lg`}
+      className={` ${scrolledNav} fixed contain z-50 top-0 w-full flex justify-between items-center transition-all duration-200 drop-shadow-lg translate`}
     >
       <div>
         {/* BIG LOGO */}
         <a href='#'>
           <img
-            src='https://mywindow.se/content/themes/wasabiweb/custom/assets/dist/img/site-logo-light.svg'
+            src={'/assets/images/Logo_full.svg'}
             alt='logo'
-            className={`${scrolledImg} hidden md:block transition-all duration-200`}
+            className={`${scrolledImg} hidden md:block invert transition-all duration-200`}
           />
         </a>
         {/* SMALL LOGO */}
         <a href='#'>
           <img
-            src='https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg'
+            src={'/assets/images/Logo_full.svg'}
             alt='logo'
-            className={`h-8 ${scrolledImg} md:hidden transition-all duration-200`}
+            className={`h-16 ${scrolledImg} md:hidden transition-all duration-200`}
           />
         </a>
       </div>
@@ -73,7 +75,7 @@ const Header = () => {
           </button>
         </div>
         <div
-          className={`fixed bg-white md:bg-transparent md:bg left-0 right-0 min-h-screen mt-4 md:mt-0 transform ${navbarState} transition duration-500 md:translate-x-0 md:relative md:min-h-0 overflow-x-hidden`}
+          className={`fixed bg-white md:bg-transparent left-1/3 md:left-0 right-0 min-h-screen mt-4 md:mt-0 transform ${navbarState} transition duration-500 md:translate-x-0 md:relative md:min-h-0 overflow-x-hidden`}
         >
           <ul className='text-xl md:text-lg mt-12 md:mt-0 text-right md:text-left space-y-8 md:space-y-0 md:space-x-6 p-4 md:p-0 md:flex md:items-center'>
             {menuItems.map((menuitem, i) => (

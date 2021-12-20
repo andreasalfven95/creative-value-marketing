@@ -19,7 +19,7 @@ const Hero = ({ id }) => {
             className='w-full h-full absolute opacity-80 bg-black'
           ></span>
         </div>
-        <div className='contain relative mx-auto'>
+        <div className='relative mx-auto'>
           <div className='items-center flex flex-wrap'>
             <div className='w-full lg:w-9/12 ml-auto mr-auto text-center'>
               <div /* className='pr-12' */>

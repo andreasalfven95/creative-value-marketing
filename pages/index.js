@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Template business website</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Creative Value - Digital Marketing Agency</title>
+        <link rel='icon' href='/icons/favicon.svg' />
       </Head>
 
       <Hero />
