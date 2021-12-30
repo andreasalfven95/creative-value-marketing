@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Creative Value - Digital Marketing Agency</title>
+        <title>Creative Value Marketing - Digital Marketing Agency</title>
         <link rel='icon' href='/assets/icons/favicon.svg' />
       </Head>
 

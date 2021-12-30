@@ -49,7 +49,7 @@ const Header = () => {
     >
       <div>
         {/* BIG LOGO */}
-        <a href='#'>
+        <a href='#' id='logo'>
           <img
             src={'/assets/images/Logo_full.svg'}
             alt='logo'
@@ -57,7 +57,7 @@ const Header = () => {
           />
         </a>
         {/* SMALL LOGO */}
-        <a href='#'>
+        <a href='#' id='small-logo'>
           <img
             src={'/assets/images/Logo_full.svg'}
             alt='logo'
@@ -67,7 +67,7 @@ const Header = () => {
       </div>
       <nav>
         <div className='flex items-center'>
-          <button>
+          <button name='menu-button'>
             <MenuIcon
               onClick={() => setNavbarOpen(!navbarOpen)}
               className='h-8 w-8 text-black md:hidden'
