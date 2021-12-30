@@ -67,7 +67,7 @@ const Header = () => {
       </div>
       <nav>
         <div className='flex items-center'>
-          <button name='menu-button'>
+          <button>
             <MenuIcon
               onClick={() => setNavbarOpen(!navbarOpen)}
               className='h-8 w-8 text-black md:hidden'
