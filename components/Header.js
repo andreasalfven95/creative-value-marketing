@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react'
 
 const Header = () => {
   const menuItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#about' },
+    { name: 'Hem', href: '#' },
+    { name: 'Om oss', href: '#about' },
     /* { name: 'Featured', href: '#featured' }, */
-    { name: 'Services', href: '#services' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Tjänster', href: '#services' },
+    { name: 'Kontakt', href: '#contact' },
   ]
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [navbarState, setNavbarState] = useState('translate-x-full')
@@ -81,7 +81,7 @@ const Header = () => {
             {menuItems.map((menuitem, i) => (
               <li
                 key={i}
-                className='z-10 transform transition-all duration-500 hover:text-gray-300 md:text-white border-b pb-2 md:border-none md:pb-0'
+                className='z-10 transform transition-all duration-500 hover:text-gray-300 md:text-white border-b pb-2 md:border-none md:pb-0 hover:opacity-10'
               >
                 <a
                   onClick={() => setNavbarOpen(!navbarOpen)}

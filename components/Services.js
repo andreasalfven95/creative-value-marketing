@@ -9,7 +9,7 @@ const Services = ({ id, bgcolor }) => {
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400'>
                   <i className='fas fa-award'></i>
                 </div>
-                <h6 className='text-xl font-semibold'>Awarded Agency</h6>
+                <h6 className='text-xl font-semibold'>Webbutveckling</h6>
                 <p className='mt-2 mb-4 text-gray-600'>
                   Divide details about your product or agency work into parts. A
                   paragraph describing a feature will be enough.
@@ -24,10 +24,13 @@ const Services = ({ id, bgcolor }) => {
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400'>
                   <i className='fas fa-retweet'></i>
                 </div>
-                <h6 className='text-xl font-semibold'>Free Revisions</h6>
+                <h6 className='text-xl font-semibold'>
+                  Digital marknadsföring
+                </h6>
                 <p className='mt-2 mb-4 text-gray-600'>
-                  Keep you user engaged by providing meaningful information.
-                  Remember that by this time, the user is curious.
+                  Kärnan Social Media Marketing Keep you user engaged by
+                  providing meaningful information. Remember that by this time,
+                  the user is curious.
                 </p>
               </div>
             </div>
@@ -39,11 +42,16 @@ const Services = ({ id, bgcolor }) => {
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400'>
                   <i className='fas fa-fingerprint'></i>
                 </div>
-                <h6 className='text-xl font-semibold'>Verified Company</h6>
+                <h6 className='text-xl font-semibold'>Varumärke</h6>
                 <p className='mt-2 mb-4 text-gray-600'>
                   Write a few lines about each one. A paragraph describing a
                   feature will be enough. Keep you user engaged!
                 </p>
+                {/* Ett spretigt varumärke skapar förvirring hos kunden och sänker det allmänna intrycket av företaget, produkten eller tjänsten. Det går därför inte att underskatta vikten av att skapa en konsekvent ram som varumärket ska agera inom. Med en varumärkesplattform (brand profile) slår ni fast vad just ni står för och gör länken mellan den affärsidé och designprofil tydlig för alla anställda.
+
+                En varumärkesplattform är ett styrdokument som redogör för organisationens vision, affärsidé, mission, kärnvärden, tonalitet, varumärkeslöfte, varumärkesidentitet och positionering på marknaden.
+
+                När webbyrån Wasabi Web gör varumärkesplattformar har vi av naturliga skäl en tonvikt på de designinslag som kommer prägla kundens webb. Vilken känsla ska webbplatsen skapa hos användaren? Vilket bildmanéer ska ni utgå ifrån? När får en accentfärg förekomma? Hur ska logotypen användas? Vilka typsnitt ska genomsyra all kommunikation? Hur ska varumärket se ut på trycksaker? Varje estetiskt element har en viktig roll i helhetsintrycket. */}
               </div>
             </div>
           </div>
