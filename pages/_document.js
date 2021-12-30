@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <meta
             name='description'
             /* content='A website for all of those who are planning their big day. Here you can find venues, locations, services etc.' */
-            content='Låt oss hjälpa er att synas bättre online! Vi hjälper er med digital marknadsföring, SEO, skapande av hemsidor och mycket, mycket mera.'
+            content='Låt oss hjälpa er att synas bättre online! Vi hjälper er med digital marknadsföring, webbutveckling, SEO och mycket, mycket mera.'
           ></meta>
           {/*  <meta
             name='viewport'

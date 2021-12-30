@@ -27,7 +27,7 @@ const Hero = ({ id }) => {
                   Vi hjälper er att växa.
                 </h1>
                 <p className='mt-4 text-lg text-gray-300'>
-                  Låt oss ta ert företag till nästa steg. Genom smart
+                  Låt oss ta ert företag till nästa nivå. Genom smart
                   marknadsföring och modern teknik genererar vi fler kunder. Vi
                   designar för att ni ska synas!
                 </p>
