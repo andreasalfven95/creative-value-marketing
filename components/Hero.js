@@ -21,7 +21,7 @@ const Hero = ({ id }) => {
         </div>
         <div className='relative mx-auto'>
           <div className='items-center flex flex-wrap'>
-            <div className='w-full md:w-6/12 ml-auto mr-auto text-center'>
+            <div className='w-full md:w-6/12 mx-auto text-center'>
               <div /* className='pr-12' */>
                 <h1 className='text-white font-semibold text-5xl'>
                   Vi hjälper er att växa.
@@ -29,7 +29,7 @@ const Hero = ({ id }) => {
                 <p className='mt-4 text-lg text-gray-300'>
                   Låt oss ta ert företag till nästa nivå. Genom smart
                   marknadsföring och modern teknik genererar vi fler kunder. Vi
-                  designar för att ni ska synas!
+                  finns för att ni ska synas!
                 </p>
               </div>
             </div>
