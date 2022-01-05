@@ -36,12 +36,12 @@ const Featured = ({ id, bgcolor }) => {
               {/* <div className='text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300'>
                 <i className='fas fa-rocket text-xl'></i>
               </div> */}
-              <h3 className='text-3xl font-semibold'>A growing company</h3>
+              <h3 className='text-3xl font-semibold'>Ett nytt äventyr.</h3>
               <p className='mt-4 text-lg leading-relaxed text-gray-600'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                deleniti placeat commodi minus vero soluta sed consequatur
-                officiis, quisquam ipsum id iure voluptatem asperiores debitis
-                culpa tenetur, dolores laboriosam repudiandae!
+                Creative Value Marketing är ett helt nystartat, men fyllt med
+                fantastiska idéer. Det startades för att möta behovet hos flera
+                företag, som både vill och behöver synas mer; och det är precis
+                vad vi är bäst på!
               </p>
               <ul className='list-none mt-6'>
                 <li className='py-2'>
