@@ -23,10 +23,10 @@ const Featured = ({ id, bgcolor }) => {
 
       <div className='contain mx-auto'>
         <div className='items-center flex flex-wrap'>
-          <div className='w-full md:w-4/12 ml-auto mr-auto max-w-md'>
+          <div className='w-full md:w-4/12 ml-auto mr-auto max-w-md flex justify-center items-center flex-wrap'>
             <img
               alt='...'
-              className='max-w-full rounded-lg shadow-lg'
+              className='max-w-full max-h-[32rem] rounded-lg shadow-lg'
               src='https://images.pexels.com/photos/3782226/pexels-photo-3782226.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
               /* src='https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80' */
             />
@@ -36,9 +36,11 @@ const Featured = ({ id, bgcolor }) => {
               {/* <div className='text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300'>
                 <i className='fas fa-rocket text-xl'></i>
               </div> */}
-              <h3 className='text-3xl font-semibold'>Ett nytt äventyr.</h3>
+              <h3 className='text-3xl font-semibold'>
+                {/* Ett nytt äventyr. */}Er hjälp på vägen.
+              </h3>
               <p className='mt-4 text-lg leading-relaxed text-gray-600'>
-                Creative Value Marketing är ett helt nystartat, men fyllt med
+                Creative Value Marketing är helt nystartat, men fyllt med
                 fantastiska idéer. Det startades för att möta behovet hos flera
                 företag, som både vill och behöver synas mer; och det är precis
                 vad vi är bäst på!
@@ -53,7 +55,7 @@ const Featured = ({ id, bgcolor }) => {
                     </div>
                     <div>
                       <h4 className='text-gray-600'>
-                        Carefully crafted components
+                        Hjälper er att ta nästa steg
                       </h4>
                     </div>
                   </div>
@@ -66,7 +68,9 @@ const Featured = ({ id, bgcolor }) => {
                       </span>
                     </div>
                     <div>
-                      <h4 className='text-gray-600'>Amazing page examples</h4>
+                      <h4 className='text-gray-600'>
+                        Gör det med fokus på växande
+                      </h4>
                     </div>
                   </div>
                 </li>
@@ -78,7 +82,9 @@ const Featured = ({ id, bgcolor }) => {
                       </span>
                     </div>
                     <div>
-                      <h4 className='text-gray-600'>Dynamic components</h4>
+                      <h4 className='text-gray-600'>
+                        Glada företag, glada kunder
+                      </h4>
                     </div>
                   </div>
                 </li>

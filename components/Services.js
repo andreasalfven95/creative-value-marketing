@@ -76,17 +76,18 @@ const Services = ({ id, bgcolor }) => {
               <i className='fas fa-user-friends text-xl'></i>
             </div> */}
             <h3 className='text-3xl mb-2 font-semibold leading-normal'>
-              Working with us is a pleasure
+              Lösningar ska vara enkelt, för er.
             </h3>
             <p className='text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Sapiente, maiores amet!
+              Vi vill att det ska kännas okomplicerat för dig som företagare att
+              arbeta med Creative Value Marketing.
             </p>
             <p className='text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad
-              magni facilis, aspernatur porro dicta praesentium sit cumque,
-              dolores iste, itaque veritatis incidunt tempora consequatur culpa.
-              Qui, cupiditate odio. Iste.
+              Därför gör vi vårt yttersta för att lyssna på er och göra vad vi
+              kan, för att ni ska få precis den tjänst som ni behöver. Om det är
+              en ny fräsch hemsida, ett nytt sätt att nå ut till nya kunder
+              eller kanske assistans i att göra om ert varumärke från grunden,
+              spelar ingen roll.
             </p>
           </div>
 
@@ -114,12 +115,12 @@ const Services = ({ id, bgcolor }) => {
                   ></polygon>
                 </svg>
                 <h4 className='text-xl font-bold text-white'>
-                  Top Notch Services
+                  Lägg fokus på det ni kan bäst
                 </h4>
                 <p className='text-md font-light mt-2 text-white'>
-                  The Arctic Ocean freezes every winter and much of the sea-ice
-                  then thaws every summer, and that process will continue
-                  whatever happens.
+                  så lovar vi att göra detsamma. Arbeta med det som ni är
+                  oslagbara på, anledningen till att ni startade från första
+                  början, så ser vi till att ta hand om det andra.
                 </p>
               </blockquote>
             </div>
