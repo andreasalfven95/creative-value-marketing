@@ -23,35 +23,51 @@ const Footer = () => {
 
       <div className='contain mx-auto'>
         <div className='flex flex-col items-center justify-center text-center'>
-          <h4 className='text-3xl font-semibold'>Let's keep in touch!</h4>
-          <h5 className='text-lg mt-0 mb-2 text-gray-700'>
-            Find us on any of these platforms, we usually respond within 1-2
-            business days.
+          <h4 className='text-3xl font-semibold'>Låt oss komma i kontakt!</h4>
+          <h5 className='text-lg mt-2 mb-2 text-gray-700'>
+            Vill ni veta mer så finns Creative Value Marketing på dessa
+            plattformar, och vi brukar svara på all kontakt inom 1-2
+            arbetsdagar.
           </h5>
           <div className='md:mt-6'>
             <button
               className='bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
               type='button'
             >
-              <i className='flex fab fa-twitter'></i>
+              <a
+                href='https://www.facebook.com/creativevaluemarketing'
+                target='_blank'
+              >
+                <img
+                  src='https://cdn-icons-png.flaticon.com/512/20/20837.png'
+                  alt='facebook'
+                />
+              </a>
             </button>
             <button
               className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
               type='button'
             >
-              <i className='flex fab fa-facebook-square'></i>
+              <a
+                href='https://www.instagram.com/creativevaluemarketing/'
+                target='_blank'
+              >
+                <img
+                  src='https://cdn-icons.flaticon.com/png/512/717/premium/717392.png?token=exp=1641489457~hmac=4123287c5fe1d08309fdc66552b6822e'
+                  alt='instagram'
+                />
+              </a>
             </button>
             <button
               className='bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
               type='button'
             >
-              <i className='flex fab fa-dribbble'></i>
-            </button>
-            <button
-              className='bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
-              type='button'
-            >
-              <i className='flex fab fa-github'></i>
+              <a href='mailto:andreas@creativevaluemarketing.com'>
+                <img
+                  src='https://cdn-icons.flaticon.com/png/512/542/premium/542638.png?token=exp=1641489559~hmac=efd30db5c325f27b842bec70037518a2'
+                  alt='email'
+                />
+              </a>
             </button>
           </div>
         </div>
