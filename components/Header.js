@@ -81,7 +81,7 @@ const Header = () => {
             {menuItems.map((menuitem, i) => (
               <li
                 key={i}
-                className='z-10 transform transition-all duration-500 hover:text-gray-300 md:text-white border-b pb-2 md:border-none md:pb-0 hover:opacity-10'
+                className='z-10 transform transition-all duration-500 md:text-white border-b pb-2 md:border-none md:pb-0 hover:opacity-30'
               >
                 <a
                   onClick={() => setNavbarOpen(!navbarOpen)}
@@ -92,6 +92,36 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            <li className='z-10 md:text-white border-b pb-2 md:border-none md:pb-0'>
+              <button
+                className='bg-white transform transition-all duration-500 border border-black font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-4 p-3 hover:opacity-50'
+                type='button'
+              >
+                <a
+                  href='https://www.facebook.com/creativevaluemarketing'
+                  target='_blank'
+                >
+                  <img
+                    src='/assets/icons/iconmonstr-facebook-1.svg'
+                    alt='facebook'
+                  />
+                </a>
+              </button>
+              <button
+                className='bg-white transform transition-all duration-500 border border-black font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3 hover:opacity-50'
+                type='button'
+              >
+                <a
+                  href='https://www.instagram.com/creativevaluemarketing/'
+                  target='_blank'
+                >
+                  <img
+                    src='/assets/icons/iconmonstr-instagram-11.svg'
+                    alt='instagram'
+                  />
+                </a>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>

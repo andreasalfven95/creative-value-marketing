@@ -1,3 +1,5 @@
+import { MailIcon } from '@heroicons/react/solid'
+
 const Footer = () => {
   return (
     <footer className='relative bg-gray-200 pt-20 pb-6'>
@@ -39,7 +41,7 @@ const Footer = () => {
                 target='_blank'
               >
                 <img
-                  src='https://cdn-icons-png.flaticon.com/512/20/20837.png'
+                  src='/assets/icons/iconmonstr-facebook-1.svg'
                   alt='facebook'
                 />
               </a>
@@ -53,19 +55,30 @@ const Footer = () => {
                 target='_blank'
               >
                 <img
-                  src='https://cdn-icons.flaticon.com/png/512/717/premium/717392.png?token=exp=1641489457~hmac=4123287c5fe1d08309fdc66552b6822e'
+                  src='/assets/icons/iconmonstr-instagram-11.svg'
                   alt='instagram'
                 />
               </a>
             </button>
             <button
-              className='bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
+              className='bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
               type='button'
             >
-              <a href='mailto:andreas@creativevaluemarketing.com'>
+              <a
+                href='mailto:andreas@creativevaluemarketing.com'
+                target='_blank'
+              >
+                <MailIcon />
+              </a>
+            </button>
+            <button
+              className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
+              type='button'
+            >
+              <a href='http://m.me/<creativevaluemarketing>' target='_blank'>
                 <img
-                  src='https://cdn-icons.flaticon.com/png/512/542/premium/542638.png?token=exp=1641489559~hmac=efd30db5c325f27b842bec70037518a2'
-                  alt='email'
+                  src='/assets/icons/iconmonstr-facebook-messenger-1.svg'
+                  alt='messenger'
                 />
               </a>
             </button>
