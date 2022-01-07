@@ -75,7 +75,7 @@ const Footer = () => {
               className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
               type='button'
             >
-              <a href='http://m.me/<creativevaluemarketing>' target='_blank'>
+              <a href='http://m.me/creativevaluemarketing' target='_blank'>
                 <img
                   src='/assets/icons/iconmonstr-facebook-messenger-1.svg'
                   alt='messenger'
