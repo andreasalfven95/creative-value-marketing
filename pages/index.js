@@ -12,6 +12,10 @@ export default function Home() {
       <Head>
         <title>Creative Value Marketing - Digital Marketing Agency</title>
         <link rel='icon' href='/assets/icons/favicon.svg' />
+        <meta
+          name='facebook-domain-verification'
+          content='r6bcgtp4wisd8sdu07db1sob071svz'
+        />
       </Head>
 
       <Hero />
