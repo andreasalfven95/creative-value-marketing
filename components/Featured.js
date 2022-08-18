@@ -19,15 +19,16 @@ const Featured = ({ id, bgcolor }) => {
             En personlig webbyrå, er hjälp på vägen.
           </h2>
           <p className='text-lg leading-8 text-gray-600'>
-            Creative Value Marketing är en relativt ny webbyrå, men fylld med
-            fantastiska idéer. Det startades för att möta behovet hos flera
-            företag, som både vill och behöver synas mer; och det är precis vad
-            vi är bäst på!
+            Creative Value Marketing är webbyrå fylld med fantastiska idéer och
+            kreativa lösningar, för såväl webbutveckling och digital
+            marknadsföring, som grafisk design och varumärkesbyggande. Det
+            startades för att möta behovet hos flera företag, som både vill och
+            behöver synas mer; och det är precis vad vi är bäst på!
           </p>
           <ul className='list-disc list-inside leading-8 text-lg'>
             <li>Webbutveckling som hjälper er att ta nästa steg.</li>
             <li>Digital marknadsföring med fokus på växande.</li>
-            <li>Belåtna företag, glada kunder.</li>
+            <li>Nöjda företagare, glada kunder.</li>
           </ul>
         </div>
       </div>
