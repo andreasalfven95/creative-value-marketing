@@ -16,18 +16,18 @@ const Featured = ({ id, bgcolor }) => {
                 <i className='fas fa-rocket text-xl'></i>
               </div> */}
           <h2 className='text-3xl font-bold'>
-            {/* Ett nytt äventyr. */}Er hjälp på vägen.
+            En personlig webbyrå, er hjälp på vägen.
           </h2>
           <p className='text-lg leading-8 text-gray-600'>
-            Creative Value Marketing är helt nystartat, men fyllt med
+            Creative Value Marketing är en relativt ny webbyrå, men fylld med
             fantastiska idéer. Det startades för att möta behovet hos flera
             företag, som både vill och behöver synas mer; och det är precis vad
             vi är bäst på!
           </p>
           <ul className='list-disc list-inside leading-8 text-lg'>
-            <li>Hjälper er att ta nästa steg</li>
-            <li>Gör det med fokus på växande</li>
-            <li>Glada företag, glada kunder</li>
+            <li>Webbutveckling som hjälper er att ta nästa steg.</li>
+            <li>Digital marknadsföring med fokus på växande.</li>
+            <li>Belåtna företag, glada kunder.</li>
           </ul>
         </div>
       </div>
