@@ -8,100 +8,129 @@ import {
   IdentificationIcon,
   FingerPrintIcon,
   UsersIcon,
-} from '@heroicons/react/solid'
+} from '@heroicons/react/solid';
 
 const Services = ({ id, bgcolor }) => {
   return (
-    <section id={id} className={`py-20 ${bgcolor}`}>
+    <section id={id} className={`py-16 ${bgcolor}`}>
       <div className='contain mx-auto'>
-        <div className='flex flex-wrap'>
-          <div className='lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center'>
-            <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
-              <div className='px-4 py-5 flex-auto'>
+        <h2 className='text-center mb-8 md:mb-20'>
+          Webbyråns tjänster & digitala lösningar
+        </h2>
+        <div className='md:grid md:grid-cols-3 grid-cols-1 gap-8'>
+          <div className='w-full text-center md:-mt-8'>
+            <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
+              <div className='px-4 py-5'>
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700'>
                   <CodeIcon />
                 </div>
-                <h6 className='text-xl font-semibold'>Webbutveckling</h6>
-                <p className='mt-2 mb-4 text-gray-600'>
-                  Dags för en ny hemsida? Tack vare smarta lösningar kommer era
-                  kunder hitta vad de söker. Vi får er att synas, med hjälp av
-                  de senaste och bästa teknikerna!
-                </p>
+                <h2 className='text-xl font-bold'>Webbutveckling</h2>
+                <div className='mt-2 mb-4 text-gray-600 flex flex-col gap-4'>
+                  <p>
+                    Behöver ni en ny hemsida som besökarna vill stanna på? Med
+                    hjälp av moderna lösningar och genomtänkt design kommer era
+                    kunder hitta precis vad de söker efter på webbsidan.
+                  </p>
+                  <p>
+                    Hemsidan eller e-handeln kommer såklart också vara optimerad
+                    för att ranka högt på Google och andra sökmotorer, med hjälp
+                    av s.k. Search Engine Optimization (SEO).
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className='w-full md:w-4/12 px-4 text-center'>
-            <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
-              <div className='px-4 py-5 flex-auto'>
+          <div className='w-full text-center md:order-first'>
+            <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
+              <div className='px-4 py-5'>
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700'>
                   <TrendingUpIcon />
                 </div>
-                <h6 className='text-xl font-semibold'>
-                  Digital marknadsföring
-                </h6>
-                <p className='mt-2 mb-4 text-gray-600'>
-                  Detta är vad Creative Value Marketing skapades för! Låt nya
-                  kunder få nytta av vad ni har att erbjuda. Genom att noga
-                  analysera vad som fungerar och inte, kommer vi hitta den bästa
-                  strategin för just er!
-                </p>
+                <h2 className='text-xl font-bold'>Digital marknadsföring</h2>
+                <div className='mt-2 mb-4 text-gray-600 flex flex-col gap-4'>
+                  <p>
+                    Behöver ni stå ut i dagens digitala landskap? Nå ut till nya
+                    och befintliga kunder genom digital marknadsföring. Oavsett
+                    vilka digitala kanaler ni vill nå ut via, så kan vi hjälpa
+                    dig.
+                  </p>
+                  <p>
+                    Specialister inom sociala medier tar tillsammans med er fram
+                    strategier & annonser och de utvärderar & optimerar era
+                    kampanjer löpande. Med lång erfarenhet och noga analysering
+                    av vad som fungerar, kommer vi hitta det bästa
+                    tillvägagångssättet för er.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className='lg:pt-12 w-full md:w-4/12 px-4 text-center'>
-            <div className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
-              <div className='px-4 py-5 flex-auto'>
+          <div className='w-full text-center'>
+            <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
+              <div className='px-4 py-5'>
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700'>
                   <IdentificationIcon />
                 </div>
-                <h6 className='text-xl font-semibold'>Varumärke</h6>
-                <p className='mt-2 mb-4 text-gray-600'>
-                  Starta ett nytt varumärke eller uppdatera ert gamla? Vi gör
-                  logotyper, branding, strategier för framtiden och mycket,
-                  mycket mer, tillsammans med er.
-                </p>
-                {/* En varumärkesplattform är ett styrdokument som redogör för organisationens vision, affärsidé, mission, kärnvärden, tonalitet, varumärkeslöfte, varumärkesidentitet och positionering på marknaden.
-
-                När webbyrån Wasabi Web gör varumärkesplattformar har vi av naturliga skäl en tonvikt på de designinslag som kommer prägla kundens webb. Vilken känsla ska webbplatsen skapa hos användaren? Vilket bildmanéer ska ni utgå ifrån? När får en accentfärg förekomma? Hur ska logotypen användas? Vilka typsnitt ska genomsyra all kommunikation? Hur ska varumärket se ut på trycksaker? Varje estetiskt element har en viktig roll i helhetsintrycket. */}
+                <h2 className='text-xl font-bold'>Digitalt varumärke</h2>
+                <div className='mt-2 mb-4 text-gray-600 flex flex-col gap-4'>
+                  <p>
+                    Ska ni starta ett nytt företag eller uppdatera ett gammalt
+                    varumärke? Vi gör logotyper, grafiska profiler, strategier
+                    för framtiden och mycket mer, tillsammans med er.
+                  </p>
+                  <p>
+                    Ett starkt varumärke, analogt och digitalt, gör avtryck och
+                    skapar känslor hos folk. Vi står redo att hjälpa er att ta
+                    fram designer och innehåll som kunder vill förknippas med.
+                    Ett varumärke som lyfter fram det budskap ni vill förmedla
+                    på digitala medier.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='flex flex-wrap items-center mt-10'>
-          <div className='w-full md:w-5/12 mr-auto ml-auto'>
+        <div className='flex flex-col md:flex-row items-center mt-16 gap-8'>
+          <div className='w-full md:w-5/12 mx-auto flex flex-col gap-4 md:text-lg'>
             {/* <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100'>
               <i className='fas fa-user-friends text-xl'></i>
             </div> */}
-            <h3 className='text-3xl mb-2 font-semibold leading-normal'>
-              Lösningar ska vara enkelt, för er.
-            </h3>
-            <p className='text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700'>
+            <h2 className='text-3xl font-bold'>
+              Lösningar inom webbutveckling & digital marknadsföring.&nbsp;
+              <br />
+              Enkelt.
+            </h2>
+            <p>
               Vi vill att det ska kännas okomplicerat för dig som företagare att
-              arbeta med Creative Value Marketing.
+              arbeta med Creative Value Marketing. Just därför gör vi vårt allra
+              yttersta för att lyssna på er och göra vad vi kan, för att ni ska
+              få precis den hjälp ni behöver.
             </p>
-            <p className='text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700'>
-              Därför gör vi vårt yttersta för att lyssna på er och göra vad vi
-              kan, för att ni ska få precis den tjänst som ni behöver. Om det är
-              en ny fräsch hemsida, ett nytt sätt att nå ut till nya kunder
-              eller kanske assistans i att göra om ert varumärke från grunden,
-              spelar ingen roll.
+            <p>
+              Vare sig om det handlar om en nybyggd hemsida med bra UI/UX-design
+              (layout och användarvänlighet/gränssnitt), ett nytt sätt att nå ut
+              till kunder på med hjälp av digital marknadsföring eller kanske
+              ledning när ert varumärke ska göras om, spelar ingen roll. Vi
+              hjälper er.
             </p>
           </div>
 
-          <div className='w-full md:w-4/12 px-4 mr-auto ml-auto'>
-            <div className='relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800'>
+          <div className='w-full md:w-4/12 mx-auto'>
+            <div className='flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg bg-gray-800'>
               <img
                 alt='...'
-                src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80'
-                className='w-full align-middle rounded-t-lg'
+                src={
+                  '/assets/images/webbutveckling-webbyra-creative-value-marketing.webp'
+                }
+                className='w-full h-full align-middle rounded-t-lg'
               />
-              <blockquote className='relative p-8 mb-4'>
+              <div className='relative p-8 mb-4'>
                 <svg
                   preserveAspectRatio='none'
-                  xmlns='http://www.w3.org/2000/svg'
+                  xmlns='https://www.w3.org/2000/svg'
                   viewBox='0 0 583 95'
                   className='absolute left-0 w-full block'
                   style={{
@@ -114,21 +143,21 @@ const Services = ({ id, bgcolor }) => {
                     className='text-gray-800 fill-current'
                   ></polygon>
                 </svg>
-                <h4 className='text-xl font-bold text-white'>
+                <h3 className='text-xl font-bold text-white'>
                   Lägg fokus på det ni kan bäst
-                </h4>
+                </h3>
                 <p className='text-md font-light mt-2 text-white'>
-                  så lovar vi att göra detsamma. Arbeta med det som ni är
-                  oslagbara på, anledningen till att ni startade från första
-                  början, så ser vi till att ta hand om det andra.
+                  så lovar vi att göra detsamma. Arbeta med det som gör er
+                  oslagbara, så ser vi till att ta hand om ert digitala ansikte
+                  utåt.
                 </p>
-              </blockquote>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

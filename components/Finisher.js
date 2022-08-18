@@ -3,88 +3,66 @@ import {
   EmojiHappyIcon,
   LightBulbIcon,
   UsersIcon,
-} from '@heroicons/react/solid'
+} from '@heroicons/react/solid';
 
 const Finisher = ({ id, bgcolor }) => {
   return (
-    <section id={id} className={`relative py-20 ${bgcolor}`}>
-      {/* <div
-        className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20'
-        style={{ height: '80px' }}
-      >
-        <svg
-          className='absolute bottom-0 overflow-hidden'
-          xmlns='http://www.w3.org/2000/svg'
-          preserveAspectRatio='none'
-          version='1.1'
-          viewBox='0 0 2560 100'
-          x='0'
-          y='0'
-        >
-          <polygon
-            className='text-gray-900 fill-current'
-            points='2560 0 2560 100 0 100'
-          ></polygon>
-        </svg>
-      </div> */}
-
-      <div className='contain mx-auto'>
-        <div className='flex flex-wrap text-center justify-center'>
-          <div className='w-full lg:w-6/12'>
-            <h2 className='text-4xl font-semibold text-white'>
-              Varför Creative Value Marketing?
-            </h2>
-            <p className='text-lg leading-relaxed mt-4 mb-4 text-gray-500'>
-              När ni väljer oss kommer vi göra vårt absolut yttersta för att
-              alla ska känna att de får någonting ut av samarbetet; ni, kunderna
-              och även vi. Under projektens gång kommer vi noga följa upp för
-              att få era tankar kring hur det går.
-            </p>
-          </div>
+    <section id={id} className={`py-16 ${bgcolor}`}>
+      <div className='contain mx-auto justify-center items-center flex flex-col gap-16'>
+        <div className='w-full max-w-3xl flex flex-col gap-4 text-center justify-center items-center'>
+          <h2 className='text-4xl font-bold text-white'>
+            Varför ska ni välja Creative Value Marketing?
+          </h2>
+          <p className='text-lg leading-relaxed text-gray-400'>
+            När ni väljer oss till att skapa er nya hemsida, eller ta hand om er
+            digitala marknadsföring, kommer vi göra vårt absolut yttersta för
+            att alla ska känna att de får någonting ut av samarbetet; både ni
+            och era kunder. Under projektens gång kommer vi ha nära kontakt och
+            noggrann uppföljning för att få era tankar kring projekten eller
+            kampanjerna.
+          </p>
         </div>
-        <div className='flex flex-wrap mt-12 justify-center'>
-          <div className='w-full lg:w-3/12 px-4 text-center'>
+        <div className='flex flex-col md:flex-row justify-center gap-8'>
+          <div className='w-full lg:w-3/12 text-center items-center flex flex-col gap-2'>
             <div className='text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>
               <UsersIcon />
             </div>
-            <h6 className='text-xl mt-5 font-semibold text-white'>
-              Personlig service
-            </h6>
-            <p className='mt-2 mb-4 text-gray-500'>
-              Vi skapar nöjda kunder genom en nära kontakt med er, och fokus på
-              vad ni vill uppnå.
-              {/* Genom nära kontakt med er och fokus på vad ni vill uppnå, skapar
-              vi bra investeringar och nöjda kunder */}
+            <h3 className='text-xl font-bold text-white'>Personlig service</h3>
+            <p className='text-gray-400'>
+              Genom nära kontakt med er, och med stort fokus på de mål ni vill
+              uppnå, skapar vi bra investeringar och nöjda kunder för er. Känner
+              ni att samarbetet fungerar så hittar vi gärna fler sätt att få er
+              att växa.
             </p>
           </div>
-          <div className='w-full lg:w-3/12 px-4 text-center'>
+          <div className='w-full lg:w-3/12 text-center items-center flex flex-col gap-2'>
             <div className='text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>
               <LightBulbIcon />
             </div>
-            <h5 className='text-xl mt-5 font-semibold text-white'>
-              Kreativa idéer
-            </h5>
-            <p className='mt-2 mb-4 text-gray-500'>
-              "Creative Value" är något vi står för, och vill därför skapa värde
-              genom kreativa lösningar.
+            <h3 className='text-xl font-bold text-white'>Kreativa idéer</h3>
+            <p className='text-gray-400'>
+              "Creative Value" är något vi står för, och vi vill därför skapa
+              värde genom kreativitet och dedikerat arbete. Med detta, moderna
+              metoder och nya tekniker, uppnår vi en hög standard.
             </p>
           </div>
-          <div className='w-full lg:w-3/12 px-4 text-center'>
+          <div className='w-full lg:w-3/12 text-center items-center flex flex-col gap-2'>
             <div className='text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>
               <AdjustmentsIcon />
             </div>
-            <h5 className='text-xl mt-5 font-semibold text-white'>
+            <h3 className='text-xl font-bold text-white'>
               Individuell anpassning
-            </h5>
-            <p className='mt-2 mb-4 text-gray-500'>
-              För att få ut mest möjliga av digitala medier arbetar vi noga med
-              att anpassa innehåll.
+            </h3>
+            <p className='text-gray-400'>
+              För att få ut mest möjligt av webbutveckling och digital
+              marknadsföring, arbetar vi noga med att anpassa innehåll till
+              målgrupper och varumärke.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Finisher
+export default Finisher;

@@ -1,19 +1,14 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang='se'>
         <Head>
           <meta
             name='description'
-            /* content='A website for all of those who are planning their big day. Here you can find venues, locations, services etc.' */
-            content='Låt oss hjälpa er att synas bättre online! Vi hjälper er med digital marknadsföring, webbutveckling, SEO och mycket, mycket mera.'
+            content='Vi får er att synas online! Vi hjälper er med webbutveckling, att ranka högt på Google (SEO), digital marknadsföring & grafisk design.'
           ></meta>
-          {/*  <meta
-            name='viewport'
-            content='width=device-width, initial-scale=1.0'
-          ></meta> */}
           <meta charSet='UTF-8'></meta>
 
           {/* FAVOICON */}
@@ -38,8 +33,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;

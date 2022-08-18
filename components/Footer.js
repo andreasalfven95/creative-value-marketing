@@ -1,8 +1,8 @@
-import { MailIcon } from '@heroicons/react/solid'
+import { MailIcon } from '@heroicons/react/solid';
 
 const Footer = () => {
   return (
-    <footer className='relative bg-gray-200 pt-20 pb-6'>
+    <footer className='relative bg-gray-200  pt-16 pb-6'>
       {/* <div
         className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20'
         style={{ height: '80px' }}
@@ -24,61 +24,70 @@ const Footer = () => {
       </div> */}
 
       <div className='contain mx-auto'>
-        <div className='flex flex-col items-center justify-center text-center'>
-          <h4 className='text-3xl font-semibold'>Låt oss komma i kontakt!</h4>
-          <h5 className='text-lg mt-2 mb-2 text-gray-700'>
-            Vill ni veta mer så finns Creative Value Marketing på dessa
-            plattformar, och vi brukar svara på all kontakt inom 1-2
-            arbetsdagar.
-          </h5>
-          <div className='md:mt-6'>
+        <div className='flex flex-col gap-4 items-center justify-center text-center max-w-3xl mx-auto'>
+          <h2 className='text-3xl font-bold'>Ta kontakt med oss!</h2>
+          <p className='text-lg text-gray-700'>
+            Vill ni veta mer så finns Creative Value Marketing på följande
+            plattformar, och vi svarar normalt inom 1-2 arbetsdagar. Följ oss
+            även gärna på sociala medier för nyheter och kampanjer.
+          </p>
+          <div className='flex gap-4'>
             <button
-              className='bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
+              className='bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
               <a
                 href='https://www.facebook.com/creativevaluemarketing'
                 target='_blank'
+                rel='nofollow noopener noreferrer'
               >
                 <img
+                  className='h-4 w-4'
                   src='/assets/icons/iconmonstr-facebook-1.svg'
-                  alt='facebook'
+                  alt='Facebook logotyp'
                 />
               </a>
             </button>
             <button
-              className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
+              className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
               <a
                 href='https://www.instagram.com/creativevaluemarketing/'
                 target='_blank'
+                rel='nofollow noopener noreferrer'
               >
                 <img
+                  className='h-4 w-4'
                   src='/assets/icons/iconmonstr-instagram-11.svg'
-                  alt='instagram'
+                  alt='Instagram logotyp'
                 />
               </a>
             </button>
             <button
-              className='bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
+              className='bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
               <a
                 href='mailto:andreas@creativevaluemarketing.com'
                 target='_blank'
               >
-                <MailIcon />
+                <MailIcon alt='Email bild' className='h-4 w-4' />
               </a>
             </button>
             <button
-              className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3'
+              className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
-              <a href='http://m.me/creativevaluemarketing' target='_blank'>
+              <a
+                href='https://m.me/creativevaluemarketing'
+                target='_blank'
+                rel='nofollow noopener noreferrer'
+              >
                 <img
+                  className='h-4 w-4'
                   src='/assets/icons/iconmonstr-facebook-messenger-1.svg'
-                  alt='messenger'
+                  alt='Messenger logotyp'
                 />
               </a>
             </button>
@@ -87,7 +96,7 @@ const Footer = () => {
         <hr className='my-6 border-gray-400' />
         <div className='flex flex-wrap items-center md:justify-between justify-center'>
           <div className='w-full mx-auto text-center'>
-            <div className='text-sm text-gray-600 font-semibold py-1'>
+            <div className='text-sm text-gray-600 font-bold'>
               Copyright © {new Date().getFullYear()} | Creative Value Marketing
               by{' '}
               <a
@@ -103,7 +112,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

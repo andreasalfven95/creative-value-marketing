@@ -4,7 +4,7 @@ const Team = ({ id, bgcolor }) => {
       <div className='contain mx-auto'>
         <div className='flex flex-wrap justify-center text-center mb-24'>
           <div className='w-full lg:w-6/12'>
-            <h2 className='text-4xl font-semibold'>Here are our heroes</h2>
+            <h2 className='text-4xl font-bold'>Here are our heroes</h2>
             <p className='text-lg leading-relaxed m-4 text-gray-600'>
               According to the National Oceanic and Atmospheric Administration,
               Ted, Scambos, NSIDClead scentist, puts the potentially record
@@ -22,7 +22,7 @@ const Team = ({ id, bgcolor }) => {
               />
               <div className='pt-6 text-center'>
                 <h5 className='text-xl font-bold'>Ryan Tompson</h5>
-                <p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
+                <p className='mt-1 text-sm text-gray-500 uppercase font-bold'>
                   Web Developer
                 </p>
                 <div className='mt-6'>
@@ -57,7 +57,7 @@ const Team = ({ id, bgcolor }) => {
               />
               <div className='pt-6 text-center'>
                 <h5 className='text-xl font-bold'>Romina Hadid</h5>
-                <p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
+                <p className='mt-1 text-sm text-gray-500 uppercase font-bold'>
                   Marketing Specialist
                 </p>
                 <div className='mt-6'>
@@ -86,7 +86,7 @@ const Team = ({ id, bgcolor }) => {
               />
               <div className='pt-6 text-center'>
                 <h5 className='text-xl font-bold'>Alexa Smith</h5>
-                <p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
+                <p className='mt-1 text-sm text-gray-500 uppercase font-bold'>
                   UI/UX Designer
                 </p>
                 <div className='mt-6'>
@@ -121,7 +121,7 @@ const Team = ({ id, bgcolor }) => {
               />
               <div className='pt-6 text-center'>
                 <h5 className='text-xl font-bold'>Jenna Kardi</h5>
-                <p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
+                <p className='mt-1 text-sm text-gray-500 uppercase font-bold'>
                   Founder and CEO
                 </p>
                 <div className='mt-6'>
@@ -156,7 +156,7 @@ const Team = ({ id, bgcolor }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

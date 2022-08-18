@@ -1,16 +1,18 @@
-import Head from 'next/head'
-import Hero from './../components/Hero'
-import Timeline from './../components/Timeline'
-import Finisher from '../components/Finisher'
-import Services from './../components/Services'
-import Featured from '../components/Featured'
-import Team from './../components/Team'
+import Head from 'next/head';
+import Hero from './../components/Hero';
+import Timeline from './../components/Timeline';
+import Finisher from '../components/Finisher';
+import Services from './../components/Services';
+import Featured from '../components/Featured';
+import Team from './../components/Team';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Creative Value Marketing - Digital Marketing Agency</title>
+        <title>
+          Creative Value Marketing - Webbbyrå & digital marknadsföring
+        </title>
         <link rel='icon' href='/assets/icons/favicon.svg' />
         <meta
           name='facebook-domain-verification'
@@ -22,13 +24,13 @@ export default function Home() {
 
       {/* <Timeline id='about' bgcolor='bg-gray-200' /> */}
 
-      <Featured id='about' bgcolor='bg-white' />
+      <Services id='tjanster' bgcolor='bg-gray-200' />
 
-      <Services id='services' bgcolor='bg-gray-200' />
+      <Featured id='om-oss' bgcolor='bg-white' />
 
-      <Finisher id='contact' bgcolor='bg-gray-900' />
+      <Finisher id='kontakt' bgcolor='bg-gray-900' />
 
       {/* <Team id='contact' bgcolor='bg-white' /> */}
     </>
-  )
+  );
 }

@@ -1,17 +1,12 @@
 const Hero = ({ id }) => {
   return (
-    <section id={id}>
-      <div
-        className='contain relative flex content-center items-center justify-center cursor-default'
-        style={{
-          minHeight: '95vh',
-        }}
-      >
+    <section id={id} className='pt-16 md:pt-0'>
+      <div className='contain relative flex content-center items-center justify-center py-32 sm:py-48 md:min-h-screen'>
         <div
-          className='absolute top-0 w-full h-full bg-center bg-cover'
+          className='absolute top-0 w-full h-full bg-center md:bg-left bg-cover'
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+              "url('/assets/images/kontor-creative-value-marketing.webp')",
           }}
         >
           <span
@@ -20,19 +15,23 @@ const Hero = ({ id }) => {
           ></span>
         </div>
         <div className='relative mx-auto'>
-          <div className='items-center flex flex-wrap'>
-            <div className='w-full md:w-6/12 mx-auto text-center'>
-              <div /* className='pr-12' */>
-                <h1 className='text-white font-semibold text-5xl'>
-                  Vi hjälper er att växa.
-                </h1>
-                <p className='mt-4 text-lg text-gray-300'>
-                  Låt oss ta ert företag till nästa nivå. Genom smart
-                  marknadsföring och modern teknik genererar vi fler kunder. Vi
-                  finns för att ni ska synas!
-                </p>
-              </div>
-            </div>
+          <div className='flex flex-col w-full md:max-w-2xl mx-auto text-white'>
+            <h1 className='text-xs mt-4 order-3 font-bold text-gray-200'>
+              Creative Value Marketing,&nbsp;
+              <span className='block text-base'>
+                Webbyrå Uppsala, Stockholm & Västerås
+              </span>
+            </h1>
+            <h2 className='font-bold text-4xl sm:text-6xl after:content-["Okomplicerat."] after:text-gray-500 after:block after:text-2xl sm:after:text-4xl sm:after:mt-2'>
+              Webbutveckling, <br /> digital marknadsföring <br /> & grafisk
+              design.
+            </h2>
+            <p className='mt-4 text-base md:text-lg text-gray-300'>
+              Webbyrån Crative Value Marketing hjälper er att synas online.
+              Genom modern webbutveckling och smart, mätbar, digital
+              marknadsföring genererar vi fler kunder till er. Låt oss ta ert
+              företag till nästa nivå.
+            </p>
           </div>
         </div>
         {/* <div
@@ -56,7 +55,7 @@ const Hero = ({ id }) => {
         </div> */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
