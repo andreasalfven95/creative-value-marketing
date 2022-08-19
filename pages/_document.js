@@ -15,17 +15,16 @@ class MyDocument extends Document {
           <link rel='shortcut icon' href='/assets/icons/favicon.svg' />
 
           {/* FONTS */}
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+          {/* <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin /> */}
           <link
-            href='https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'
             rel='stylesheet'
           />
-          {/* <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;600;700&display=swap'
+          {/* <link
+            href='https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=optional'
             rel='stylesheet'
+            as='font'
           /> */}
         </Head>
         <body className='antialiased selection:bg-sky-900/20'>

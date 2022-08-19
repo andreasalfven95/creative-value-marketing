@@ -144,7 +144,7 @@ const Services = ({ id, bgcolor }) => {
                 <h3 className='text-xl font-bold text-white'>
                   Lägg fokus på det ni kan bäst
                 </h3>
-                <p className='text-md font-light mt-2 text-white'>
+                <p className='text-md mt-2 text-white'>
                   så lovar vi att göra detsamma. Arbeta med det som gör er
                   oslagbara, så ser vi till att ta hand om ert digitala ansikte
                   utåt.

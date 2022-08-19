@@ -51,7 +51,11 @@ const Header = () => {
     >
       <div className=''>
         {/* BIG LOGO */}
-        <a href='#' id='logo'>
+        <a
+          href='#'
+          id='logo'
+          aria-label='Link Creative Value Marketing to main page'
+        >
           <img
             src={'/assets/images/creative-value-marketing-logo-full.svg'}
             alt='Creative Value Marketing logotyp'
@@ -59,7 +63,11 @@ const Header = () => {
           />
         </a>
         {/* SMALL LOGO */}
-        <a href='#' id='small-logo'>
+        <a
+          href='#'
+          id='small-logo'
+          aria-label='Link to Creative Value Marketing main page'
+        >
           <img
             src={'/assets/images/creative-value-marketing-logo-full.svg'}
             alt='Creative Value Marketing logotyp'
@@ -67,10 +75,12 @@ const Header = () => {
           />
         </a>
       </div>
-      <nav className='shrink-0'>
+      <nav role='navigation' aria-label='Main menu' className='shrink-0'>
         <div className='flex items-center'>
-          <button>
+          <button aria-label='Menu button'>
             <MenuIcon
+              aria-hidden='true'
+              focusable='false'
               onClick={() => setNavbarOpen(!navbarOpen)}
               className='h-8 w-8 text-black md:hidden'
             />

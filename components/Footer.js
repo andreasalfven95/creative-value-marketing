@@ -33,6 +33,7 @@ const Footer = () => {
           </p>
           <div className='flex gap-4'>
             <button
+              aria-label='Facebook link'
               className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
@@ -40,6 +41,7 @@ const Footer = () => {
                 href='https://www.facebook.com/creativevaluemarketing'
                 target='_blank'
                 rel='nofollow noopener noreferrer'
+                aria-label='Link to Creative Value Marketing Facebook'
               >
                 <img
                   className='h-4 w-4'
@@ -49,6 +51,7 @@ const Footer = () => {
               </a>
             </button>
             <button
+              aria-label='Instagram link'
               className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
@@ -56,6 +59,7 @@ const Footer = () => {
                 href='https://www.instagram.com/creativevaluemarketing/'
                 target='_blank'
                 rel='nofollow noopener noreferrer'
+                aria-label='Link to Creative Value Marketing Instagram'
               >
                 <img
                   className='h-4 w-4'
@@ -65,14 +69,20 @@ const Footer = () => {
               </a>
             </button>
             <button
+              aria-label='Email link'
               className='bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
-              <a href='mailto:hello@creativevaluemarketing.com' target='_blank'>
+              <a
+                href='mailto:hello@creativevaluemarketing.com'
+                target='_blank'
+                aria-label='Link to Creative Value Marketing email'
+              >
                 <MailIcon alt='Email bild' className='h-4 w-4' />
               </a>
             </button>
             <button
+              aria-label='Messanger link'
               className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
@@ -80,6 +90,7 @@ const Footer = () => {
                 href='https://m.me/creativevaluemarketing'
                 target='_blank'
                 rel='nofollow noopener noreferrer'
+                aria-label='Link to Creative Value Marketing Messenger'
               >
                 <img
                   className='h-4 w-4'
