@@ -28,7 +28,7 @@ class MyDocument extends Document {
             rel='stylesheet'
           /> */}
         </Head>
-        <body className='antialiased'>
+        <body className='antialiased selection:bg-sky-900/20'>
           <Main />
           <NextScript />
         </body>

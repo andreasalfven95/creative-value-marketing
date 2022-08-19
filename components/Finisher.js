@@ -5,6 +5,8 @@ import {
   UsersIcon,
 } from '@heroicons/react/solid';
 
+import CTAButton from './CTAButton';
+
 const Finisher = ({ id, bgcolor }) => {
   return (
     <section id={id} className={`py-16 ${bgcolor}`}>

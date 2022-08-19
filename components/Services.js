@@ -98,10 +98,8 @@ const Services = ({ id, bgcolor }) => {
             {/* <div className='text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100'>
               <i className='fas fa-user-friends text-xl'></i>
             </div> */}
-            <h2 className='text-3xl font-bold'>
+            <h2 className='text-3xl font-bold after:content-["Enkelt."] after:text-gray-500 after:block'>
               Lösningar inom webbutveckling & digital marknadsföring.&nbsp;
-              <br />
-              Enkelt.
             </h2>
             <p>
               Vi vill att det ska kännas okomplicerat för dig som företagare att

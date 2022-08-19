@@ -1,3 +1,5 @@
+import CTAButton from './CTAButton';
+
 const Featured = ({ id, bgcolor }) => {
   return (
     <section id={id} className={`py-16 ${bgcolor}`}>
@@ -12,24 +14,29 @@ const Featured = ({ id, bgcolor }) => {
           />
         </div>
         <div className='w-full flex flex-col gap-4 md:w-5/12 '>
-          {/* <div className='text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300'>
-                <i className='fas fa-rocket text-xl'></i>
-              </div> */}
           <h2 className='text-3xl font-bold'>
             En personlig webbyrå, er hjälp på vägen.
           </h2>
           <p className='text-lg leading-8 text-gray-600'>
-            Creative Value Marketing är webbyrå fylld med fantastiska idéer och
-            kreativa lösningar, för såväl webbutveckling och digital
-            marknadsföring, som grafisk design och varumärkesbyggande. Det
-            startades för att möta behovet hos flera företag, som både vill och
-            behöver synas mer; och det är precis vad vi är bäst på!
+            Creative Value Marketing är webbyrå, baserad i Uppsala, fylld med
+            fantastiska idéer. Vi har kreativa lösningar för såväl
+            webbutveckling och digital marknadsföring, som grafisk design och
+            varumärkesbyggande. Vi startade för att möta behovet hos flera
+            företag, som både vill och behöver synas mer; och det är precis vad
+            vi är bäst på!
           </p>
           <ul className='list-disc list-inside leading-8 text-lg'>
             <li>Webbutveckling som hjälper er att ta nästa steg.</li>
             <li>Digital marknadsföring med fokus på växande.</li>
             <li>Nöjda företagare, glada kunder.</li>
           </ul>
+          <div className='mx-auto md:mx-0'>
+            <CTAButton
+              textColor={'text-white'}
+              bgColor={'bg-sky-800/80'}
+              borderColor={'border-black'}
+            />
+          </div>
         </div>
       </div>
     </section>

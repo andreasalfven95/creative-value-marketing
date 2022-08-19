@@ -33,7 +33,7 @@ const Footer = () => {
           </p>
           <div className='flex gap-4'>
             <button
-              className='bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
+              className='bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
               <a
@@ -68,10 +68,7 @@ const Footer = () => {
               className='bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none p-3'
               type='button'
             >
-              <a
-                href='mailto:andreas@creativevaluemarketing.com'
-                target='_blank'
-              >
+              <a href='mailto:hello@creativevaluemarketing.com' target='_blank'>
                 <MailIcon alt='Email bild' className='h-4 w-4' />
               </a>
             </button>

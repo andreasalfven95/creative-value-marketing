@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 const Header = () => {
   const menuItems = [
     { name: 'Hem', href: '#' },
-    { name: 'Om oss', href: '#om-oss' },
-    /* { name: 'Featured', href: '#featured' }, */
     { name: 'Tjänster', href: '#tjanster' },
+    { name: 'Om oss', href: '#om-oss' },
     { name: 'Kontakt', href: '#kontakt' },
+    /* { name: 'Featured', href: '#featured' }, */
   ];
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [navbarState, setNavbarState] = useState('translate-x-full');

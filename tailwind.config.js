@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         lato: "'Lato', sans-serif",
       },
+      animation: {
+        'bounce-slow': 'bounce 3s ease-in-out infinite',
+      },
     },
   },
   /* plugins: [require('@tailwindcss/forms'), require('tailwind-scrollbar')], */
