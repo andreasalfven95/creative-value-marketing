@@ -99,6 +99,7 @@ const Footer = () => {
               <a
                 href='https://andreasalfven95.github.io/portfolio/'
                 target='_blank'
+                rel='nofollow'
                 className='text-gray-600 hover:text-gray-900'
               >
                 Andreas Alfvén
