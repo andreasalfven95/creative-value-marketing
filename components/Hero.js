@@ -1,22 +1,25 @@
-import CTAButton from './CTAButton';
+import CTAButton from './CTAButton'
+import ExportedImage from 'next-image-export-optimizer'
 
 const Hero = ({ id }) => {
   return (
     <section id={id} className='md:pt-0'>
       <div className='contain relative flex content-center items-center justify-center min-h-screen'>
-        <div
-          className='absolute top-0 w-full h-full bg-center md:bg-left bg-cover'
-          style={{
-            backgroundImage:
-              "url('/assets/images/kontor-creative-value-marketing.webp')",
-          }}
-        >
+        <div className='absolute top-0 w-full h-full -z-10'>
+          <ExportedImage
+            layout='fill'
+            objectFit='cover'
+            priority
+            src='assets/images/kontor-creative-value-marketing.webp'
+            alt='Teamet på webbyrån Creative Value Marketing jobbar med digital marknadsföring.'
+            className='object-center md:object-left'
+          />
           <span
             id='blackOverlay'
             className='w-full h-full absolute opacity-80 bg-black'
           ></span>
         </div>
-        <div className='relative mx-auto flex flex-col gap-4 md:max-w-2xl text-white'>
+        <div className='mx-auto flex flex-col gap-4 md:max-w-2xl text-white'>
           <h1 className='text-xs order-last font-bold text-gray-200'>
             Creative Value Marketing,&nbsp;
             <span className='block text-base'>
@@ -38,16 +41,17 @@ const Hero = ({ id }) => {
             bgColor={'bg-sky-800/80'}
             borderColor={'border-white'}
           />
+          <img
+            loading='lazy'
+            aria-hidden
+            src='assets/images/scroll.svg'
+            alt='Scroll ikon'
+            className='h-16 w-16 absolute animate-bounce-slow bottom-8 left-0 right-0 mx-auto'
+          />
         </div>
-        <img
-          aria-hidden
-          className='absolute h-16 w-16 bottom-0 md:bottom-16 animate-bounce-slow'
-          src='/assets/icons/scroll.svg'
-          alt='Scroll ikon'
-        />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

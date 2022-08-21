@@ -1,19 +1,20 @@
-import CTAButton from './CTAButton';
+import CTAButton from './CTAButton'
+import ExportedImage from 'next-image-export-optimizer'
 
 const Featured = ({ id, bgcolor }) => {
   return (
     <section id={id} className={`py-16 ${bgcolor}`}>
-      <div className='contain mx-auto items-center justify-evenly flex flex-col-reverse gap-8 md:flex-row'>
-        <div className='flex justify-center items-center'>
-          <img
-            alt='Creative Value Marketing vägledande ord.'
-            className='max-w-full w-full h-full max-h-[32rem] rounded-lg shadow-lg'
-            src={
-              '/assets/images/digital-marknadsforing-creative-value-marketing.webp'
-            }
+      <div className='contain mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 items-center'>
+        <div className='relative h-full min-h-[350px] rounded-lg overflow-hidden shadow-xl'>
+          <ExportedImage
+            src='assets/images/digital-marknadsforing-creative-value-marketing.webp'
+            alt='Webbyrån Creative Value Marketings vägledande ord för webbutveckling och digital marknadsföring.'
+            layout='fill'
+            objectFit='cover'
+            className='object-bottom'
           />
         </div>
-        <div className='w-full flex flex-col gap-4 md:w-5/12 '>
+        <div className='w-full flex flex-col justify-center gap-4'>
           <h2 className='text-3xl font-bold'>
             En personlig webbyrå, er hjälp på vägen.
           </h2>
@@ -40,7 +41,7 @@ const Featured = ({ id, bgcolor }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Featured;
+export default Featured

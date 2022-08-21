@@ -1,4 +1,5 @@
-import { MailIcon } from '@heroicons/react/solid';
+import { MailIcon } from '@heroicons/react/solid'
+import ExportedImage from 'next-image-export-optimizer'
 
 const Footer = () => {
   return (
@@ -44,8 +45,9 @@ const Footer = () => {
                 aria-label='Link to Creative Value Marketing Facebook'
               >
                 <img
+                  loading='lazy'
                   className='h-4 w-4'
-                  src='/assets/icons/iconmonstr-facebook-1.svg'
+                  src='assets/images/iconmonstr-facebook-1.svg'
                   alt='Facebook logotyp'
                 />
               </a>
@@ -62,8 +64,9 @@ const Footer = () => {
                 aria-label='Link to Creative Value Marketing Instagram'
               >
                 <img
+                  loading='lazy'
                   className='h-4 w-4'
-                  src='/assets/icons/iconmonstr-instagram-11.svg'
+                  src='assets/images/iconmonstr-instagram-11.svg'
                   alt='Instagram logotyp'
                 />
               </a>
@@ -76,9 +79,10 @@ const Footer = () => {
               <a
                 href='mailto:hello@creativevaluemarketing.com'
                 target='_blank'
+                rel='noreferrer'
                 aria-label='Link to Creative Value Marketing email'
               >
-                <MailIcon alt='Email bild' className='h-4 w-4' />
+                <MailIcon loading='lazy' alt='Email bild' className='h-4 w-4' />
               </a>
             </button>
             <button
@@ -93,8 +97,9 @@ const Footer = () => {
                 aria-label='Link to Creative Value Marketing Messenger'
               >
                 <img
+                  loading='lazy'
                   className='h-4 w-4'
-                  src='/assets/icons/iconmonstr-facebook-messenger-1.svg'
+                  src='assets/images/iconmonstr-facebook-messenger-1.svg'
                   alt='Messenger logotyp'
                 />
               </a>
@@ -110,7 +115,7 @@ const Footer = () => {
               <a
                 href='https://andreasalfven95.github.io/portfolio/'
                 target='_blank'
-                rel='nofollow'
+                rel='nofollow noreferrer'
                 className='text-gray-600 hover:text-gray-900'
               >
                 Andreas Alfvén
@@ -121,7 +126,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

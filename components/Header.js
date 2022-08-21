@@ -1,5 +1,6 @@
-import { MenuIcon } from '@heroicons/react/solid';
-import { useEffect, useState } from 'react';
+import { MenuIcon } from '@heroicons/react/solid'
+import { useEffect, useState } from 'react'
+import ExportedImage from 'next-image-export-optimizer'
 
 const Header = () => {
   const menuItems = [
@@ -8,73 +9,81 @@ const Header = () => {
     { name: 'Om oss', href: '#om-oss' },
     { name: 'Kontakt', href: '#kontakt' },
     /* { name: 'Featured', href: '#featured' }, */
-  ];
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const [navbarState, setNavbarState] = useState('translate-x-full');
+  ]
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  const [navbarState, setNavbarState] = useState('translate-x-full')
   const [scrolledNav, setScrolledNav] = useState(
     'h-16 md:h-28 bg-white md:bg-transparent'
-  );
-  const [scrolledTxt, setScrolledTxt] = useState('');
-  const [scrolledImg, setScrolledImg] = useState('md:h-24');
+  )
+  const [scrolledTxt, setScrolledTxt] = useState('')
+  const [scrolledImg, setScrolledImg] = useState('md:h-24')
 
   /* HANDLE SCROLL */
   const handleScroll = () => {
     if (window.scrollY > 30) {
-      setScrolledNav('h-16 md:h-16 bg-white');
-      setScrolledTxt('md:text-black');
-      setScrolledImg('md:h-16 md:invert-0');
+      setScrolledNav('h-16 md:h-16 bg-white')
+      setScrolledTxt('md:text-black')
+      setScrolledImg('md:h-16 md:invert-0')
     } else {
-      setScrolledNav('h-16 md:h-28 bg-white md:bg-transparent');
-      setScrolledTxt('md:text-white');
-      setScrolledImg('md:h-24');
+      setScrolledNav('h-16 md:h-28 bg-white md:bg-transparent')
+      setScrolledTxt('md:text-white')
+      setScrolledImg('md:h-24')
     }
-  };
+  }
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
 
   /* SHOW/HIDE SIDEBAR */
   useEffect(() => {
     if (navbarOpen) {
-      setNavbarState('translate-x-0');
-      document.body.classList.add('overflow-hidden');
+      setNavbarState('translate-x-0')
+      document.body.classList.add('overflow-hidden')
     } else {
-      setNavbarState('translate-x-full');
-      document.body.classList.remove('overflow-hidden');
+      setNavbarState('translate-x-full')
+      document.body.classList.remove('overflow-hidden')
     }
-  }, [navbarOpen]);
+  }, [navbarOpen])
 
   return (
     <header
+      onLoad={handleScroll}
       className={` ${scrolledNav} fixed contain z-50 top-0 w-full flex justify-between items-center transition-all duration-200 drop-shadow-lg translate gap-8`}
     >
-      <div className=''>
-        {/* BIG LOGO */}
-        <a
-          href='#'
-          id='logo'
-          aria-label='Link Creative Value Marketing to main page'
-        >
-          <img
-            src={'/assets/images/creative-value-marketing-logo-full.svg'}
-            alt='Creative Value Marketing logotyp'
-            className={`${scrolledImg} w-full hidden md:block invert transition-all duration-200`}
-          />
-        </a>
-        {/* SMALL LOGO */}
-        <a
-          href='#'
-          id='small-logo'
-          aria-label='Link to Creative Value Marketing main page'
-        >
-          <img
-            src={'/assets/images/creative-value-marketing-logo-full.svg'}
-            alt='Creative Value Marketing logotyp'
-            className={`h-16 ${scrolledImg} w-full md:hidden transition-all duration-200`}
-          />
-        </a>
-      </div>
+      {/* BIG LOGO */}
+      <a
+        href='#'
+        id='logo'
+        aria-label='Link Creative Value Marketing to main page'
+        className={`${scrolledImg} w-full hidden md:block invert transition-all duration-200 relative max-w-xs`}
+      >
+        <ExportedImage
+          priority
+          layout='fill'
+          objectFit='contain'
+          className='object-left'
+          alt='Webbutveckling och digital marknadsföring hos Creative Value Marketing'
+          src='/assets/images/creative-value-marketing-logo-full.webp'
+        />
+      </a>
+      {/* SMALL LOGO */}
+      <a
+        href='#'
+        id='small-logo'
+        aria-label='Link to Creative Value Marketing main page'
+        className={`h-16 ${scrolledImg} w-full md:hidden transition-all duration-200 relative max-w-xs`}
+      >
+        <ExportedImage
+          priority
+          layout='fill'
+          objectFit='contain'
+          className='object-left'
+          alt='Webbyrån Creative Value Marketings logotyp'
+          src='/assets/images/creative-value-marketing-logo-full.webp'
+        />
+      </a>
+
       <nav role='navigation' aria-label='Main menu' className='shrink-0'>
         <div className='flex items-center'>
           <button aria-label='Menu button'>
@@ -87,7 +96,7 @@ const Header = () => {
           </button>
         </div>
         <div
-          className={`fixed bg-white md:bg-transparent left-1/3 md:left-0 right-0 min-h-screen mt-4 md:mt-0 transform ${navbarState} transition duration-500 md:translate-x-0 md:relative md:min-h-0 overflow-x-hidden`}
+          className={`fixed bg-white md:bg-transparent left-1/3 md:left-0 right-0 min-h-screen mt-4 md:mt-0 transform ${navbarState} transition duration-500 md:translate-x-0 md:relative md:min-h-0 overflow-x-hidden min-h-[4rem]`}
         >
           <ul className='text-xl md:text-lg mt-12 md:mt-0 text-right md:text-left gap-8 p-4 md:p-0 flex flex-col md:flex-row md:items-center'>
             {menuItems.map((menuitem, i) => (
@@ -116,9 +125,10 @@ const Header = () => {
                   rel='nofollow noopener noreferrer'
                 >
                   <img
+                    loading='lazy'
                     className='h-4 w-4'
-                    src='/assets/icons/iconmonstr-facebook-1.svg'
-                    alt='facebook'
+                    src='assets/images/iconmonstr-facebook-1.svg'
+                    alt='Facebook ikon'
                   />
                 </a>
               </button>
@@ -133,9 +143,10 @@ const Header = () => {
                   rel='nofollow noopener noreferrer'
                 >
                   <img
+                    loading='lazy'
                     className='h-4 w-4'
-                    src='/assets/icons/iconmonstr-instagram-11.svg'
-                    alt='instagram'
+                    src='assets/images/iconmonstr-instagram-11.svg'
+                    alt='Instagram ikon'
                   />
                 </a>
               </button>
@@ -144,14 +155,15 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
 
 /* import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Image } from 'next/image';
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },

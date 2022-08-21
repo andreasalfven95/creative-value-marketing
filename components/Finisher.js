@@ -3,9 +3,9 @@ import {
   EmojiHappyIcon,
   LightBulbIcon,
   UsersIcon,
-} from '@heroicons/react/solid';
+} from '@heroicons/react/solid'
 
-import CTAButton from './CTAButton';
+import CTAButton from './CTAButton'
 
 const Finisher = ({ id, bgcolor }) => {
   return (
@@ -27,7 +27,7 @@ const Finisher = ({ id, bgcolor }) => {
         <div className='flex flex-col md:flex-row justify-center gap-8'>
           <div className='w-full lg:w-3/12 text-center items-center flex flex-col gap-2'>
             <div className='text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>
-              <UsersIcon />
+              <UsersIcon loading='lazy' />
             </div>
             <h3 className='text-xl font-bold text-white'>Personlig service</h3>
             <p className='text-gray-400'>
@@ -39,18 +39,19 @@ const Finisher = ({ id, bgcolor }) => {
           </div>
           <div className='w-full lg:w-3/12 text-center items-center flex flex-col gap-2'>
             <div className='text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>
-              <LightBulbIcon />
+              <LightBulbIcon loading='lazy' />
             </div>
             <h3 className='text-xl font-bold text-white'>Kreativa idéer</h3>
             <p className='text-gray-400'>
-              "Creative Value" är något vi står för, och vi vill därför skapa
-              värde genom kreativitet och dedikerat arbete. Med detta, moderna
-              metoder och nya tekniker, uppnår vi en hög standard.
+              &quot;Creative Value&quot; är något vi står för, och vi vill
+              därför skapa värde genom kreativitet och dedikerat arbete. Med
+              detta, moderna metoder och nya tekniker, uppnår vi en hög
+              standard.
             </p>
           </div>
           <div className='w-full lg:w-3/12 text-center items-center flex flex-col gap-2'>
             <div className='text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>
-              <AdjustmentsIcon />
+              <AdjustmentsIcon loading='lazy' />
             </div>
             <h3 className='text-xl font-bold text-white'>
               Individuell anpassning
@@ -64,7 +65,7 @@ const Finisher = ({ id, bgcolor }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Finisher;
+export default Finisher

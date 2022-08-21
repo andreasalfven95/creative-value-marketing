@@ -1,3 +1,4 @@
+import ExportedImage from 'next-image-export-optimizer'
 import {
   CodeIcon,
   CursorClickIcon,
@@ -8,7 +9,7 @@ import {
   IdentificationIcon,
   FingerPrintIcon,
   UsersIcon,
-} from '@heroicons/react/solid';
+} from '@heroicons/react/solid'
 
 const Services = ({ id, bgcolor }) => {
   return (
@@ -22,7 +23,7 @@ const Services = ({ id, bgcolor }) => {
             <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
               <div className='px-4 py-5'>
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700'>
-                  <CodeIcon />
+                  <CodeIcon loading='lazy' />
                 </div>
                 <h2 className='text-xl font-bold'>Webbutveckling</h2>
                 <div className='mt-2 mb-4 text-gray-600 flex flex-col gap-4'>
@@ -45,7 +46,7 @@ const Services = ({ id, bgcolor }) => {
             <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
               <div className='px-4 py-5'>
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700'>
-                  <TrendingUpIcon />
+                  <TrendingUpIcon loading='lazy' />
                 </div>
                 <h2 className='text-xl font-bold'>Digital marknadsföring</h2>
                 <div className='mt-2 mb-4 text-gray-600 flex flex-col gap-4'>
@@ -71,7 +72,7 @@ const Services = ({ id, bgcolor }) => {
             <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
               <div className='px-4 py-5'>
                 <div className='text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gray-700'>
-                  <IdentificationIcon />
+                  <IdentificationIcon loading='lazy' />
                 </div>
                 <h2 className='text-xl font-bold'>Digitalt varumärke</h2>
                 <div className='mt-2 mb-4 text-gray-600 flex flex-col gap-4'>
@@ -118,13 +119,16 @@ const Services = ({ id, bgcolor }) => {
 
           <div className='w-full md:w-4/12 mx-auto'>
             <div className='flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg bg-gray-800'>
-              <img
-                alt='...'
-                src={
-                  '/assets/images/webbutveckling-webbyra-creative-value-marketing.webp'
-                }
-                className='w-full h-full align-middle rounded-t-lg'
-              />
+              <div className='relative h-full min-h-[350px] rounded-lg overflow-hidden'>
+                <ExportedImage
+                  layout='fill'
+                  objectFit='cover'
+                  alt='Webbutveckling och digital marknadsföring hos Creative Value Marketing'
+                  src={
+                    'assets/images/webbutveckling-webbyra-creative-value-marketing.webp'
+                  }
+                />
+              </div>
               <div className='relative p-8 mb-4'>
                 <svg
                   preserveAspectRatio='none'
@@ -155,7 +159,7 @@ const Services = ({ id, bgcolor }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services
