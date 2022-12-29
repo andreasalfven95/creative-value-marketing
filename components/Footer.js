@@ -113,7 +113,7 @@ const Footer = () => {
               Copyright © {new Date().getFullYear()} | Creative Value Marketing
               by{' '}
               <a
-                href='https://andreasalfven95.github.io/portfolio/'
+                href='https://www.linkedin.com/in/andreas-alfven'
                 target='_blank'
                 rel='nofollow noreferrer'
                 className='text-gray-600 hover:text-gray-900'

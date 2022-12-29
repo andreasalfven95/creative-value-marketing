@@ -15,9 +15,25 @@ const Services = ({ id, bgcolor }) => {
   return (
     <section id={id} className={`py-16 ${bgcolor}`}>
       <div className='contain mx-auto'>
-        <h2 className='text-center mb-8 md:mb-20'>
-          Webbyråns tjänster & digitala lösningar
-        </h2>
+        <div className='text-center mx-auto max-w-4xl mb-8 md:mb-20'>
+          <h2 className='mb-4'>
+            Våra tjänster & digitala lösningar - allt i en webbyrå
+          </h2>
+          <p className='mb-4'>
+            Med lång erfarenhet, men fortfarande alltid med strävan efter att
+            utvecklas, erbjuder vi på Creative Value Marketing tjänster för
+            digitala lösningar som baseras på den senaste och säkraste tekniken.
+            Detta gör att du som kund kan känna dig trygg med att din hemsida
+            kommer ligga uppe, och inte nere, samt att den uppfyller de senaste
+            kraven inom online-säkerhet.
+          </p>
+          <p>
+            Förutom att vara en webbyrå som värdesätter säkerhet, så är vi även
+            stolta över att kunna leverera kreativa lösningar när det kommer
+            till digital marknadsföring, skapande inom grafisk produktion och
+            digitala varumärken.
+          </p>
+        </div>
         <div className='md:grid md:grid-cols-3 grid-cols-1 gap-8'>
           <div className='w-full text-center md:-mt-8'>
             <div className='relative flex flex-col break-words bg-white w-full mb-8 shadow-lg rounded-lg'>
@@ -100,7 +116,7 @@ const Services = ({ id, bgcolor }) => {
               <i className='fas fa-user-friends text-xl'></i>
             </div> */}
             <h2 className='text-3xl font-bold after:content-["Enkelt."] after:text-gray-500 after:block'>
-              Lösningar inom webbutveckling & digital marknadsföring.&nbsp;
+              Lösningar inom webbutveckling & digital marknadsföring.
             </h2>
             <p>
               Vi vill att det ska kännas okomplicerat för dig som företagare att
@@ -127,6 +143,7 @@ const Services = ({ id, bgcolor }) => {
                   src={
                     'assets/images/webbutveckling-webbyra-creative-value-marketing.webp'
                   }
+                  loading='lazy'
                 />
               </div>
               <div className='relative p-8 mb-4'>

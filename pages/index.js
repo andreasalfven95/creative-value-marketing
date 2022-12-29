@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Creative Value Marketing - Webbbyrå & digital marknadsföring
+          Creative Value Marketing - Webbyrå & digital marknadsföring
         </title>
       </Head>
 

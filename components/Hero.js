@@ -21,20 +21,20 @@ const Hero = ({ id }) => {
         </div>
         <div className='mx-auto flex flex-col gap-4 md:max-w-2xl text-white'>
           <h1 className='text-xs order-last font-bold text-gray-200'>
-            Creative Value Marketing,&nbsp;
+            Creative Value Marketing -&nbsp;
             <span className='block text-base'>
               Webbyrå Uppsala, Stockholm & Västerås
             </span>
           </h1>
           <h2 className='font-bold text-4xl sm:text-6xl after:content-["Okomplicerat."] after:text-gray-500 after:block after:text-2xl sm:after:text-4xl sm:after:mt-2'>
-            Webbutveckling, <br /> digital marknadsföring <br /> & grafisk
-            design.
+            Webbutveckling, <br />
+            digital marknadsföring <br />& grafisk design.
           </h2>
           <p className='text-base md:text-lg text-gray-300'>
-            Webbyrån Crative Value Marketing hjälper er att synas online. Genom
-            modern webbutveckling och smart, mätbar, digital marknadsföring
-            genererar vi fler kunder till er. Låt oss ta ert företag till nästa
-            nivå.
+            Crative Value Marketing är en webbyrå som hjälper er att synas
+            online. Genom modern & säker webbutveckling, samt smart & mätbar
+            digital marknadsföring, genererar vi fler kunder till er. Låt oss ta
+            ert företag till nästa nivå.
           </p>
           <CTAButton
             textColor={'text-white'}

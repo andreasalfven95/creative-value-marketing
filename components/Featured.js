@@ -12,11 +12,12 @@ const Featured = ({ id, bgcolor }) => {
             layout='fill'
             objectFit='cover'
             className='object-bottom'
+            loading='lazy'
           />
         </div>
         <div className='w-full flex flex-col justify-center gap-4'>
           <h2 className='text-3xl font-bold'>
-            En personlig webbyrå, er hjälp på vägen.
+            En personlig webbyrå — er hjälp på vägen.
           </h2>
           <p className='text-lg leading-8 text-gray-600'>
             Creative Value Marketing är webbyrå, baserad i Uppsala, fylld med
@@ -29,7 +30,7 @@ const Featured = ({ id, bgcolor }) => {
           <ul className='list-disc list-inside leading-8 text-lg'>
             <li>Webbutveckling som hjälper er att ta nästa steg.</li>
             <li>Digital marknadsföring med fokus på växande.</li>
-            <li>Nöjda företagare, glada kunder.</li>
+            <li>Nöjda företagare — glada kunder.</li>
           </ul>
           <div className='mx-auto md:mx-0'>
             <CTAButton

@@ -3,19 +3,12 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang='se'>
+      <Html lang='sv-SE'>
         <Head>
           <meta
             name='description'
-            key='desc'
             content='Vi får er att synas online! Vi hjälper er med webbutveckling, att ranka högt på Google (SEO), digital marknadsföring & grafisk design.'
           ></meta>
-          <meta charSet='UTF-8'></meta>
-
-          <meta
-            name='facebook-domain-verification'
-            content='r6bcgtp4wisd8sdu07db1sob071svz'
-          />
 
           <link
             rel='canonical'
@@ -25,10 +18,10 @@ class MyDocument extends Document {
 
           {/* OPEN GRAPH */}
           <meta property='og:site_name' content='Creative Value Marketing' />
-          <meta property='og:locale' content='se_SE' />
+          <meta property='og:locale' content='sv_SE' />
           <meta
             property='og:title'
-            content='Creative Value Marketing - Webbbyrå & digital marknadsföring'
+            content='Creative Value Marketing - Webbyrå & digital marknadsföring'
           />
           <meta property='og:type' content='website' />
           <meta
@@ -37,7 +30,7 @@ class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content='assets/images/creative-value-marketing-logo-full.webp'
+            content='https://creativevaluemarketing.com/assets/images/creative-value-marketing-logo-full.webp'
           />
           <meta
             property='og:description'
@@ -52,7 +45,7 @@ class MyDocument extends Document {
           <meta name='twitter:card' content='summary' />
           <meta
             name='twitter:title'
-            content='Creative Value Marketing - Webbbyrå & digital marknadsföring'
+            content='Creative Value Marketing - Webbyrå & digital marknadsföring'
           />
           <meta
             name='twitter:description'

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <title>
-          Creative Value Marketing - Webbbyrå & digital marknadsföring
+          Creative Value Marketing - Webbyrå & digital marknadsföring
         </title>
       </Head>
       <Layout>
